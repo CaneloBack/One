@@ -4,29 +4,33 @@
 
 <script>
 
-function saltarLinea(){
-	document.write("<br>");
-	document.write("<br>");
-	document.write("<br>");
-	document.write("<br>");
-}
+	function saltarLinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
 
 	var anho = 2025;
-	var saltoLinea = "<br><br><br><br>"
-
-	document.write("Juan tiene: " + (anho-2000) + " años");
-
-	saltarLinea();
-
-	document.write("Pedro tiene: " + (anho-1995) + " años");
 	
-	saltarLinea();
+	imprimir("hola amigos")
+
+	imprimir("Juan tiene: " + (anho-2000) + " años");
+
+	imprimir("Pedro tiene: " + (anho-1995) + " años");
+	
 	
 	anho = 2030
 
-	document.write("Carlos tiene: " + (anho-2005) + " años");
+	imprimir("Carlos tiene: " + (anho-2005) + " años");
 	
-	saltarLinea();
 
 
 
