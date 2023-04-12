@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<h1>PROGRAMA CALCULAR IMC</h1>
+<h1>Adivina el número</h1>
 
 <script>
 
@@ -19,51 +19,21 @@
 
 	}
 
-	function calcularImc(peso,altura) {
+	var numeroPensado = Math.round(Math.random() * 10);
+	var numeroLanzado = parseInt(prompt("Ingresa un número entre 0 - 10"));
 
-		return (peso / (altura * altura));
+	if (numeroPensado == numeroLanzado) {
 
-	}
-	nombre = prompt("Indique su nombre");
-	pesoInformado = prompt("indique su peso");
-	alturaInformado = prompt("indique su altura");
-
-	imcCalculado = calcularImc(pesoInformado,alturaInformado)
-
-	imprimir(nombre +" su imc calculado es: " + imcCalculado);
-
-
-
-	if (imcCalculado < 18.5) {
-
-		imprimir("IMC abajo de lo recomendado");
-
+		imprimir("Acertó")
 	}
 
-	if (imcCalculado >= 18.5) {
+	else {
 
-		if (imcCalculado < 25) {
-
-			imprimir("IMC está dentro del intervalo normal");	
-		}
-		
-	}
-
-
-	if (imcCalculado >= 25) {
-		
-		if (imcCalculado < 30) {}
-
-			imprimir("IMC considerado como sobre peso")
+		imprimir("usted erró, el número pensado era " + numeroPensado)
 
 	}
 
 
-	if (imcCalculado >= 30) {
-
-		imprimir("IMC considerado como obesidad");
-
-	}
 
 </script>
 
