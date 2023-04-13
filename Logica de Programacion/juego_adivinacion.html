@@ -20,18 +20,48 @@
 	}
 
 	var numeroPensado = Math.round(Math.random() * 10);
-	var numeroLanzado = parseInt(prompt("Ingresa un número entre 0 - 10"));
+	var intentos = 3;
+	var contador = 1;
 
-	if (numeroPensado == numeroLanzado) {
 
-		imprimir("Acertó")
+
+	while (contador <= intentos){
+
+		var numeroLanzado = parseInt(prompt("Ingresa un número entre 0 - 10"));
+
+		if (numeroPensado == numeroLanzado) {
+
+			alert("Acertó, en el intento " + intento + " el numero pensado era " + numeroPensado)
+			break;
+		}
+
+		else {
+
+			alert("usted erró")
+
+		}
+
+		contador++;
+
+		}
+
+		if (numeroPensado == numeroLanzado) {
+
+			imprimir("erró, en el intento " + intento + " el numero pensado era " + numeroPensado)
+			
+		}
+
+		else {
+
+			imprimir("usted erró, el numero pensado era " + numeroPensado);
+
 	}
 
-	else {
 
-		imprimir("usted erró, el número pensado era " + numeroPensado)
+	imprimir ("fin")
 
-	}
+
+	
 
 
 
